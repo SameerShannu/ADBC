@@ -9,7 +9,6 @@ import {
   Dimensions,
   Platform,
 } from "react-native";
-import * as Animation from "react-native-reanimated";
 import { MaterialCommunityIcons, AntDesign } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-gesture-handler";
@@ -36,6 +35,7 @@ export default function MainScreen({ category, navigation }) {
 
   useEffect(() => {
     fetchArticles();
+
     Dimensions.addEventListener("change", handleScreenResize);
     return () => {
       Dimensions.removeEventListener("change", handleScreenResize);
@@ -181,7 +181,7 @@ export default function MainScreen({ category, navigation }) {
                     alignItems: "center",
                     position: "absolute",
                     bottom: 30,
-                    right: 40,
+                    right: 20,
                   }}
                 >
                   <View
