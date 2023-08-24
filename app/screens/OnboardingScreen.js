@@ -4,15 +4,12 @@ import {
   StyleSheet,
   Text,
   Dimensions,
-  Platform,
   TouchableOpacity,
 } from "react-native";
 
 import Onboarding from "react-native-onboarding-swiper";
 import LottieView from "lottie-react-native";
 import { useNavigation } from "@react-navigation/native";
-
-import MainScreenWrapper from "./MainScreenWrapper";
 
 const { width, height } = Dimensions.get("window");
 
