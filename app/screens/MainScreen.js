@@ -171,9 +171,7 @@ export default function MainScreen({ category, navigation }) {
               <Image source={{ uri: featured_image }} style={styles.image} />
               <View style={styles.contentHolder}>
                 <Text style={styles.title}>{title}</Text>
-                <Text numberOfLines={9} style={styles.excerpt}>
-                  {excerpt}
-                </Text>
+                <Text style={styles.excerpt}>{excerpt}</Text>
                 <View
                   style={{
                     flexDirection: "row",
@@ -295,7 +293,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   excerpt: {
-    textAlign: "justify",
+    textAlign: "left",
     fontSize: 18,
     marginLeft: 10,
     marginRight: 10,
